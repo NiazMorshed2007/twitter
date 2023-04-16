@@ -6,31 +6,38 @@ const Navigations = () => {
     const navigations = [
         {
             name: 'Home',
-            icon: <BsHouseDoor className="text-2xl" />
+            icon: <BsHouseDoor className="text-2xl" />,
+            link: "/"
         },
         {
             name: 'Explore',
-            icon: <BsHash className="text-2xl" />
+            icon: <BsHash className="text-2xl" />,
+            link: "/explore"
         },
         {
             name: 'Notifications',
-            icon: <BsBell className="text-2xl" />
+            icon: <BsBell className="text-2xl" />,
+            link: "/notifications"
         },
         {
             name: 'Messages',
-            icon: <BsEnvelope className="text-2xl" />
+            icon: <BsEnvelope className="text-2xl" />,
+            link: "/messages"
         },
         {
             name: 'Bookmarks',
-            icon: <BsBookmark className="text-2xl" />
+            icon: <BsBookmark className="text-2xl" />,
+            link: "/bookmarks"
         },
         {
             name: 'Lists',
-            icon: <BsList className="text-2xl" />
+            icon: <BsList className="text-2xl" />,
+            link: "/lists"
         },
         {
             name: 'Profile',
-            icon: <BsPerson className="text-2xl" />
+            icon: <BsPerson className="text-2xl" />,
+            link: "/profile"
         },
     ]
 
