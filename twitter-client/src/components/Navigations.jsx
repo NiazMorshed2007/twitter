@@ -1,5 +1,6 @@
 import { BsBell, BsBookmark, BsEnvelope, BsHash, BsHouseDoor, BsList, BsPerson, BsSearch, BsThreeDots, BsTwitter } from 'react-icons/bs'
 import PrimaryButton from './PrimaryButton'
+import Link from 'next/link'
 
 const Navigations = () => {
 
@@ -46,9 +47,11 @@ const Navigations = () => {
             <BsTwitter className="text-3xl mt-4 ml-4 text-primary" />
             <div className="navs-wrapper mt-7 w-full">
                 {navigations.map((nav, index) => (
-                    <div key={index} className="flex text-[18px] cursor-pointer items-center gap-5 w-full p-3 rounded-3xl hover:bg-hoverColor hover:font-medium">
-                        {nav.icon} {nav.name}
-                    </div>
+                    <Link key={index} href={nav.link}>
+                        <div className="flex text-[18px] cursor-pointer items-center gap-5 w-full p-3 rounded-3xl hover:bg-hoverColor hover:font-medium">
+                            {nav.icon} {nav.name}
+                        </div>
+                    </Link>
                 ))}
             </div>
             <PrimaryButton style={"w-full p-3 mt-4 rounded-3xl"}>Tweet</PrimaryButton>
