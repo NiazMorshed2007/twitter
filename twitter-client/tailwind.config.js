@@ -18,6 +18,9 @@ export default {
       animation: {
         'fade-in' : 'fadeIn 500ms ease forwards',
         'slower-fade-in' : 'fadeIn 750ms 500ms ease forwards'
+      },
+      height: {
+        '9/10': '90%',
       }
     },
   },
